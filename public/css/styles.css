@@ -1,0 +1,86 @@
+.labelStyles {
+    font-weight: bold;
+    color: #000;
+}
+
+/* Custom CSS for floating labels */
+.form-floating {
+    position: relative;
+}
+
+.form-floating .form-control,
+.form-floating .form-select {
+    height: calc(2.25rem + 2px);
+    /* Reduced height */
+    padding: .375rem .75rem;
+    /* Reduced padding */
+    padding-bottom: .25rem;
+    /* Adjust bottom padding */
+}
+
+.form-floating label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: auto;
+    pointer-events: none;
+    border: 1px solid transparent;
+    transition: all 0.1s ease-in-out;
+}
+
+.form-floating .form-control:focus+label,
+.form-floating .form-control:not(:placeholder-shown)+label,
+.form-floating .form-select:focus+label,
+.form-floating .form-select:not(:placeholder-shown)+label {
+    transform: scale(.85) translateY(-.75rem) translateX(.15rem);
+    padding: 0 .2rem;
+    background-color: white;
+    color: #383c40;
+}
+
+.form-floating .form-control:focus,
+.form-floating .form-control:not(:placeholder-shown) {
+    padding-top: 1rem;
+    padding-bottom: .15rem;
+}
+
+.form-floating .form-select:focus,
+.form-floating .form-select:not(:placeholder-shown) {
+    padding-top: 1rem;
+    padding-bottom: .15rem;
+}
+
+/* / */
+.product-row {
+    display: flex;
+    align-items: center;
+}
+
+.product-row .form-group {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.product-row .input-group {
+    display: flex;
+}
+
+.product-row .input-group .form-control {
+    width: auto;
+    flex: 1;
+}
+
+.product-row .btn {
+    height: 100%;
+}
+
+.product-row .remove-product-row,
+.product-row .add-product-row {
+    margin-left: auto;
+}
+
+.product-row .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
